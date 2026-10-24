@@ -3,7 +3,8 @@ local M = {}
 ---@param conf AuraColorscheme.InternalConfig
 ---@return table
 M.get_colors = function(conf)
-  local p = conf.colors.palette
+  local c = conf.colors
+  local p = c.palette
 
   -- stylua: ignore
   local hl = {
@@ -15,10 +16,10 @@ M.get_colors = function(conf)
     ModesVisual  = { bg = p.magenta.base },
 
     -- Groups missing from aura: original vague colors
-    ModesInsertCursorLine     = { bg = "#252530" },
-    ModesInsertCursorLineNr   = { bg = "#252530" },
-    ModesInsertCursorLineFold = { bg = "#252530" },
-    ModesInsertCursorLineSign = { bg = "#252530" },
+    ModesInsertCursorLine     = { bg = c.bg2 },
+    ModesInsertCursorLineNr   = { bg = c.bg2 },
+    ModesInsertCursorLineFold = { bg = c.bg2 },
+    ModesInsertCursorLineSign = { bg = c.bg2 },
   }
 
   return hl
