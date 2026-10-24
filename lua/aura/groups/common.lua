@@ -62,8 +62,9 @@ M.get_colors = function(conf)
     SpellCap           = { sp = c.diag.warn, undercurl = true },
     SpellLocal         = { sp = c.diag.info, undercurl = true },
     SpellRare          = { sp = c.diag.info, undercurl = true },
-    StatusLine         = { fg = c.fg2, bg = panel(c.bg0) },
-    StatusLineNC       = { fg = c.fg3, bg = panel(c.bg0) },
+    -- Statusline colors follow gruvbox's Airline theme (third_party/gruvbox/autoload/airline/themes)
+    StatusLine         = { fg = "#a89984", bg = panel("#3c3836") },
+    StatusLineNC       = { fg = "#7c6f64", bg = panel("#3c3836") },
     TabLine            = { fg = c.fg2, bg = panel(c.bg2) },
     TabLineFill        = { bg = panel(c.bg0) },
     TabLineSel         = { fg = c.bg1, bg = c.fg3 },

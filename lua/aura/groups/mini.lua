@@ -112,16 +112,17 @@ M.get_colors = function(conf)
     MiniStarterSection    = { fg = p.red.base },
     MiniStarterQuery      = { fg = p.green.base },
 
-    MiniStatuslineDevinfo     = { fg = k.fg2, bg = k.bg2 },
-    MiniStatuslineFileinfo    = { fg = k.fg2, bg = k.bg2 },
+    -- Gruvbox Airline theme: section a = mode, b = devinfo/fileinfo, c = filename
+    MiniStatuslineDevinfo     = { fg = "#a89984", bg = "#504945" },
+    MiniStatuslineFileinfo    = { fg = "#a89984", bg = "#504945" },
     MiniStatuslineFilename    = { link = "StatusLine" },
     MiniStatuslineInactive    = { link = "StatusLineNC" },
-    MiniStatuslineModeCommand = { fg = k.bg0, bg = p.yellow.base,  bold = conf.bold },
-    MiniStatuslineModeInsert  = { fg = k.bg0, bg = p.green.base,   bold = conf.bold },
-    MiniStatuslineModeNormal  = { fg = k.bg0, bg = p.cyan.base,    bold = conf.bold },
-    MiniStatuslineModeOther   = { fg = k.bg0, bg = p.blue.base,    bold = conf.bold },
-    MiniStatuslineModeReplace = { fg = k.bg0, bg = p.red.base,     bold = conf.bold },
-    MiniStatuslineModeVisual  = { fg = k.bg0, bg = p.magenta.base, bold = conf.bold },
+    MiniStatuslineModeCommand = { fg = "#282828", bg = "#a89984", bold = conf.bold },
+    MiniStatuslineModeInsert  = { fg = "#282828", bg = "#83a598", bold = conf.bold },
+    MiniStatuslineModeNormal  = { fg = "#282828", bg = "#a89984", bold = conf.bold },
+    MiniStatuslineModeOther   = { fg = "#282828", bg = "#a89984", bold = conf.bold },
+    MiniStatuslineModeReplace = { fg = "#282828", bg = "#8ec07c", bold = conf.bold },
+    MiniStatuslineModeVisual  = { fg = "#282828", bg = "#fe8019", bold = conf.bold },
 
     MiniSurround = { link = "IncSearch" },
 
