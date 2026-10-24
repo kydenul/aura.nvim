@@ -5,11 +5,12 @@ local M = {}
 M.get_colors = function(conf)
   local c = conf.colors
   local s = c.syntax
+  local function panel(color) return not conf.transparent and color or nil end
 
   -- stylua: ignore
   local hl = {
-    CmpDocumentation         = { fg = c.fg1, bg = c.bg0 },
-    CmpDocumentationBorder   = { fg = c.sel0, bg = c.bg0 },
+    CmpDocumentation         = { fg = c.fg1, bg = panel(c.bg0) },
+    CmpDocumentationBorder   = { fg = c.sel0, bg = panel(c.bg0) },
 
     CmpItemAbbr              = { fg = c.fg1 },
     CmpItemAbbrDeprecated    = { fg = s.dep, strikethrough = true },
@@ -17,6 +18,7 @@ M.get_colors = function(conf)
     CmpItemAbbrMatchFuzzy    = { fg = s.func },
 
     CmpItemKindDefault       = { fg = c.fg2 },
+    CmpItemKind              = { fg = "#606079" }, -- original vague color
     CmpItemMenu              = { link = "Comment" },
 
     CmpItemKindKeyword       = { link = "Identifier" },

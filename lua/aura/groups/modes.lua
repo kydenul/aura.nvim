@@ -13,6 +13,12 @@ M.get_colors = function(conf)
     ModesInsert  = { bg = p.cyan.base },
     ModesReplace = { bg = p.orange.base },
     ModesVisual  = { bg = p.magenta.base },
+
+    -- Groups missing from aura: original vague colors
+    ModesInsertCursorLine     = { bg = "#252530" },
+    ModesInsertCursorLineNr   = { bg = "#252530" },
+    ModesInsertCursorLineFold = { bg = "#252530" },
+    ModesInsertCursorLineSign = { bg = "#252530" },
   }
 
   return hl

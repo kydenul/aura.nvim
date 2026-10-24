@@ -6,6 +6,18 @@ M.get_colors = function(conf)
   -- stylua: ignore
   local hl = {
     ["@lsp.type.boolean"]                    = { link = "@boolean" },
+    -- Groups missing from aura: same links as vague
+    ["@lsp.type.builtinConstant"]            = { link = "@constant.builtin" },
+    ["@lsp.type.class"]                      = { link = "Structure" },
+    ["@lsp.type.function"]                   = { link = "@function.call" },
+    ["@lsp.type.generic"]                    = { link = "@type" },
+    ["@lsp.type.macro"]                      = { link = "Macro" },
+    ["@lsp.type.method"]                     = { link = "@function.method" },
+    ["@lsp.type.selfParameter"]              = { link = "Special" },
+    ["@lsp.type.typeParameter"]              = { link = "Typedef" },
+    ["@lsp.typemod.function.builtin"]        = { link = "@function.builtin" },
+    ["@lsp.typemod.function.definition"]     = { link = "@function" },
+    ["@lsp.typemod.variable.definition"]     = { link = "@property" },
     ["@lsp.type.builtinType"]                = { link = "@type.builtin" },
     ["@lsp.type.comment"]                    = { link = "@comment" },
     ["@lsp.type.enum"]                       = { link = "@type" },

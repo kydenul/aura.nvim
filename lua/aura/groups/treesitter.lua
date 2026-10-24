@@ -44,6 +44,12 @@ M.get_colors = function(conf)
 
     -- Functions
     ["@function"]                    = { link = "Function" },
+    -- Groups missing from aura: original vague colors
+    ["@function.call"]               = { fg = "#bb9dbd" },
+    ["@function.method.call"]        = { fg = "#9bb4bc" },
+    ["@string.special.symbol"]       = { link = "Identifier" },
+    ["@type.declaration"]            = { fg = "#aeaed1" },
+    ["@type.definition"]             = { link = "Typedef" },
     ["@function.builtin"]            = { fg = s.builtin0 },
     ["@function.macro"]              = { fg = s.builtin0 },
     ["@constructor"]                 = { fg = s.ident },

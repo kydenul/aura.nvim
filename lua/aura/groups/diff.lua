@@ -11,6 +11,9 @@ M.get_colors = function(conf)
     DiffChange    = { bg = c.diff.change },
     DiffDelete    = { bg = c.diff.delete },
     DiffText      = { bg = c.diff.text },
+    -- Groups missing from aura: original vague colors
+    DiffFile      = { fg = "#6e94b2" },
+    DiffIndexLine = { fg = "#606079" },
 
     Added         = { fg = c.git.add },
     Changed       = { fg = c.git.changed },

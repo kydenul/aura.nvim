@@ -21,6 +21,9 @@ M.get_colors = function(conf)
     NeotestIndent       = { link = "Conceal" },
     NeotestExpandMarker = { link = "Conceal" },
     NeotestAdapterName  = { fg = p.pink.base, bold = conf.bold },
+    -- Groups missing from aura: original vague colors
+    NeotestWatching     = { fg = "#f3be7c" },
+    NeotestTarget       = { fg = "#7e98e8" },
   }
 
   return hl
