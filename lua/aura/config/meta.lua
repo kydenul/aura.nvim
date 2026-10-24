@@ -30,6 +30,9 @@
 ---@field transparent? boolean
 ---@field bold? boolean
 ---@field italic? boolean
+---@field dim_inactive? boolean
+---@field terminal_colors? boolean
+---@field compile? boolean
 ---@field colors? AuraColorscheme.colors
 ---@field on_highlights? fun(highlights: table<string, vim.api.keyset.highlight>, colors: AuraColorscheme.InternalConfig.colors)
 

@@ -2,6 +2,7 @@ local curr_internal_conf = require("aura.config.internal").current
 local M = {}
 
 M.set_highlights = function()
+  if not curr_internal_conf.terminal_colors then return end
   local p = curr_internal_conf.colors.palette
   vim.g.terminal_color_0 = p.black.base
   vim.g.terminal_color_1 = p.red.base

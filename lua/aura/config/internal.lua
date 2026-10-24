@@ -9,6 +9,18 @@ local DEFAULT_SETTINGS = {
   bold = true,
   ---@type boolean
   italic = true,
+  -- Darken non-current windows (`NormalNC`, `WinBarNC`) with `bg0`. Ignored when `transparent`.
+  ---@type boolean
+  dim_inactive = false,
+  -- Set `vim.g.terminal_color_0..15` from the palette.
+  ---@type boolean
+  terminal_colors = true,
+  -- Cache the resolved highlight groups in `stdpath("cache")/aura` so later startups skip building them.
+  -- Measured gain is negligible (building ~1.5ms; most time is `nvim_set_hl`), hence off by default.
+  -- The cache is invalidated when the config or any aura source file changes (not on `on_highlights` upvalue changes:
+  -- call `require("aura").compile()` for that).
+  ---@type boolean
+  compile = false,
 
   ---@param highlights table<string, vim.api.keyset.highlight>
   ---@param colors AuraColorscheme.InternalConfig.colors

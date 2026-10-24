@@ -9,6 +9,13 @@ end
 -- SHOULD BE CALLED AFTER SETUP (unless using default colors)
 M.get_palette = function() return vim.deepcopy(internal_conf.current.colors) end
 
+--- Rebuild the highlight cache (see the `compile` option) and re-apply it.
+--- Needed when `on_highlights` changes in a way the cache cannot detect (e.g. an upvalue).
+M.compile = function()
+  require("aura.highlights").compile()
+  vim.cmd.colorscheme("aura")
+end
+
 --- Under the hood, |:colorscheme| is just using |:highlight GroupName ...| over every highlight group it knows about.
 --- so this function is the equivalent to calling |:colorscheme| so use that instead
 M._colorscheme = function()
