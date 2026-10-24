@@ -23,7 +23,7 @@ M.get_colors = function(conf)
     lCursor            = { link = "Cursor" },
     CursorIM           = { link = "Cursor" },
     CursorColumn       = { link = "CursorLine" },
-    CursorLine         = { bg = c.bg2 },
+    CursorLine         = { bg = c.bg3 },
     CursorLineNr       = { fg = c.palette.pink.base, bold = conf.bold },
     Directory          = { fg = c.syntax.func },
     EndOfBuffer        = { fg = c.bg1 },

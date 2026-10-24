@@ -21,7 +21,7 @@ local DEFAULT_SETTINGS = {
     bg0  = "#191726", -- Dark bg (status line and float)
     bg1  = "#232136", -- Default bg
     bg2  = "#2d2a45", -- Lighter bg (colorcolumn, folds)
-    bg3  = "#373354", -- Lighter bg (cursor line)
+    bg3  = "#3a3460", -- Lighter bg (cursor line)
     bg4  = "#4b4673", -- Conceal, border fg
 
     fg0  = "#eae8ff", -- Lighter fg
