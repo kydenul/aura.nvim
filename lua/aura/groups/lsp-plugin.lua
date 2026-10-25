@@ -32,9 +32,9 @@ M.get_colors = function(conf)
     DiagnosticUnderlineHint    = { sp = d.hint, undercurl = true },
     DiagnosticUnderlineOk      = { sp = d.ok, undercurl = true },
 
-    LspReferenceText           = { bg = c.sel0 },
-    LspReferenceRead           = { bg = c.sel0 },
-    LspReferenceWrite          = { bg = c.sel0 },
+    LspReferenceText           = { bg = c.sel0, underline = true },
+    LspReferenceRead           = { bg = c.sel0, underline = true },
+    LspReferenceWrite          = { bg = c.sel0, underline = true },
 
     LspCodeLens                = { fg = c.syntax.comment },
     LspCodeLensSeparator       = { fg = c.fg3 },
