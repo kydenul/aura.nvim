@@ -24,7 +24,7 @@
 ---@field diag? table<"error"|"warn"|"info"|"hint"|"ok", string>
 ---@field diag_bg? table<"error"|"warn"|"info"|"hint"|"ok", string>
 ---@field diff? table<"add"|"delete"|"change"|"text", string>
----@field git? table<"add"|"removed"|"changed"|"conflict"|"ignored", string>
+---@field git? table<"add"|"removed"|"changed"|"conflict"|"ignored"|"blame", string>
 
 ---@class AuraColorscheme.Config
 ---@field transparent? boolean

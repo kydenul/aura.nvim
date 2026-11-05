@@ -13,7 +13,7 @@ M.get_colors = function(conf)
     GitSignsTopdelete       = { link = "GitSignsDelete" },
     GitSignsChangedelete    = { link = "GitSignsChange" },
     GitSignsUntracked       = { fg = c.git.ignored },
-    GitSignsCurrentLineBlame = { fg = c.syntax.comment },
+    GitSignsCurrentLineBlame = { fg = c.git.blame, italic = false },
   }
 
   return hl

@@ -30,10 +30,10 @@ local DEFAULT_SETTINGS = {
   ---@class AuraColorscheme.InternalConfig.colors
   -- stylua: ignore
   colors = {
-    bg0  = "#191726", -- Dark bg (status line and float)
-    bg1  = "#232136", -- Default bg
-    bg2  = "#2d2a45", -- Lighter bg (colorcolumn, folds)
-    bg3  = "#3a3460", -- Lighter bg (cursor line)
+    bg0  = "#121118", -- Dark bg (status line and float)
+    bg1  = "#1a1922", -- Default bg
+    bg2  = "#25232f", -- Lighter bg (colorcolumn, folds)
+    bg3  = "#33303f", -- Lighter bg (cursor line)
     bg4  = "#4b4673", -- Conceal, border fg
 
     fg0  = "#eae8ff", -- Lighter fg
@@ -110,6 +110,7 @@ local DEFAULT_SETTINGS = {
       changed  = "#f6c177",
       conflict = "#ea9a97",
       ignored  = "#817c9c",
+      blame    = "#677489", -- Inline current line blame
     },
   },
 }
@@ -117,9 +118,7 @@ local DEFAULT_SETTINGS = {
 M._DEFAULT_SETTINGS = DEFAULT_SETTINGS
 M.current = M._DEFAULT_SETTINGS
 
-local opts = type(vim.g.aura_colorscheme) == "function" and vim.g.aura_colorscheme()
-  or vim.g.aura_colorscheme
-  or {}
+local opts = type(vim.g.aura_colorscheme) == "function" and vim.g.aura_colorscheme() or vim.g.aura_colorscheme or {}
 
 ---@param user_opts AuraColorscheme.Config
 M.set = function(user_opts) M.current = vim.tbl_deep_extend("force", vim.deepcopy(M.current), user_opts or opts) end
