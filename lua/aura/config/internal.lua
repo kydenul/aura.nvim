@@ -31,7 +31,7 @@ local DEFAULT_SETTINGS = {
   -- stylua: ignore
   colors = {
     bg0  = "#121118", -- Dark bg (status line and float)
-    bg1  = "#1a1922", -- Default bg
+    bg1  = "#0e1117", -- Default bg
     bg2  = "#25232f", -- Lighter bg (colorcolumn, folds)
     bg3  = "#33303f", -- Lighter bg (cursor line)
     bg4  = "#4b4673", -- Conceal, border fg
